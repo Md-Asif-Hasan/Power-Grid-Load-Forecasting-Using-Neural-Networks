@@ -7,7 +7,7 @@ Data (manual download):
 - UCI ElectricityLoadDiagrams20112014 (LD2011_2014.txt). Save to data/raw/LD2011_2014.txt.
 
 Run:
-- python data_download.py   # follow instructions to place file
+- python data_download.py  
 - python preprocess.py
 - python features.py
 - python train.py
@@ -15,6 +15,6 @@ Run:
 - python app.py
 
 Notes:
-- No weather, holidays, or external regressors used.
 - Features: time encodings (hour, dayofweek, month, weekend), load lags (1–168h), rolling stats.
 - Models: MLP baseline or seq2seq RNN/LSTM/GRU with direct multi-step output.
+
